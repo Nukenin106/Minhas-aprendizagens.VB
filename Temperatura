@@ -1,0 +1,17 @@
+Sub Main(args As String())
+        Dim temp As Integer
+        Console.WriteLine("Introduza o valor da temperatura.")
+        temp = Console.ReadLine()
+        If temp = 15 Then
+            Console.WriteLine("Muito Frio")
+        ElseIf (temp >= 16) And (temp < 23) Then
+            Console.WriteLine("Frio")
+        ElseIf (temp >= 23) And (temp < 26) Then
+            Console.WriteLine("Agradável")
+        ElseIf (temp >= 26) And (temp <= 30) Then
+            Console.WriteLine("Calor")
+        Else
+            Console.WriteLine("Muito quente")
+        End If
+
+    End Sub
