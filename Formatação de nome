@@ -1,0 +1,25 @@
+Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If CheckBox1.Checked = True Then
+            Label6.Text = TextBox1.Text.ToUpper
+            If RadioButton1.Checked = True Then
+                Label6.ForeColor = Color.Red
+            ElseIf RadioButton2.Checked = True Then
+                Label6.ForeColor = Color.Green
+            ElseIf RadioButton3.Checked = True Then
+                Label6.ForeColor = Color.Yellow
+            ElseIf RadioButton4.Checked = True Then
+                Label6.ForeColor = Color.Blue
+            End If
+        Else
+            Label6.Text = TextBox1.Text
+            If RadioButton1.Checked = True Then
+                Label6.ForeColor = Color.Red
+            ElseIf RadioButton2.Checked = True Then
+                Label6.ForeColor = Color.Green
+            ElseIf RadioButton3.Checked = True Then
+                Label6.ForeColor = Color.Yellow
+            ElseIf RadioButton4.Checked = True Then
+                Label6.ForeColor = Color.Blue
+            End If
+        End If
+    End Sub
