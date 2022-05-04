@@ -1,0 +1,13 @@
+ Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim desc As Single
+        If CSng(TextBox1.Text) <= 5000 Then
+            desc = CSng(TextBox1.Text) * 0.1
+            TextBox2.Text = "10%"
+            TextBox3.Text = CStr(CSng(TextBox1.Text) - (TextBox1.Text) * 0.1) + "€"
+        Else
+            desc = CSng(TextBox1.Text) * 0.25
+            TextBox2.Text = "25%"
+            TextBox3.Text = CStr(CSng((TextBox1.Text) - (TextBox1.Text) * 0.25)) + "€"
+        End If
+
+    End Sub
